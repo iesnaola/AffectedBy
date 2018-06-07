@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#"
+     xml:base="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:affectedBy="https://w3id.org/affectedBy#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:AffectedBy="https://w3id.org/AffectedBy#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl">
+        <owl:imports rdf:resource="https://w3id.org/affectedBy"/>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+        <terms:title xml:lang="en">AffectedBy ODP Example</terms:title>
+        <ns:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <terms:description xml:lang="en">The AffectedBy ODP example.</terms:description>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/AffectedBy#affectedBy -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/AffectedBy#affectedBy"/>
+    
+
+
+    <!-- https://w3id.org/AffectedBy#belongsTo -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/AffectedBy#belongsTo"/>
+    
+
+
+    <!-- https://w3id.org/AffectedBy#hasQuality -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/AffectedBy#hasQuality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office -->
+
+    <owl:NamedIndividual rdf:about="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#FeatureOfInterest"/>
+        <affectedBy:hasQuality rdf:resource="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature"/>
+        <rdfs:comment xml:lang="en">The office where I work.</rdfs:comment>
+        <AffectedBy:hasQuality rdf:resource="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeHumidity -->
+
+    <owl:NamedIndividual rdf:about="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeHumidity">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The relative humidity within the office.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeOccupancy -->
+
+    <owl:NamedIndividual rdf:about="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeOccupancy">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The number of people within the office.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <affectedBy:affectedBy rdf:resource="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeHumidity"/>
+        <affectedBy:affectedBy rdf:resource="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeOccupancy"/>
+        <affectedBy:affectedBy rdf:resource="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature"/>
+        <affectedBy:belongsTo rdf:resource="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office"/>
+        <rdfs:comment xml:lang="en">The temperature within the office.</rdfs:comment>
+        <AffectedBy:affectedBy rdf:resource="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeHumidity"/>
+        <AffectedBy:affectedBy rdf:resource="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeOccupancy"/>
+        <AffectedBy:affectedBy rdf:resource="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#outdoorHumidity"/>
+        <AffectedBy:belongsTo rdf:resource="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#outdoorHumidity -->
+
+    <owl:NamedIndividual rdf:about="http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#outdoorHumidity">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The relative humidity outside the office.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
