@@ -1,0 +1,70 @@
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/affectedBy> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/3.0/> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJes\u00FAs Berm\u00FAdez <mailto:jesus.bermudez@ehu.eus>" .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl> <http://purl.org/dc/terms/description> "The AffectedBy ODP example."@en .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl> <http://purl.org/dc/terms/title> "AffectedBy ODP Example"@en .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/AffectedBy#affectedBy
+<https://w3id.org/AffectedBy#affectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/AffectedBy#belongsTo
+<https://w3id.org/AffectedBy#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/AffectedBy#hasQuality
+<https://w3id.org/AffectedBy#hasQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#FeatureOfInterest> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office> <https://w3id.org/affectedBy#hasQuality> <http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office> <http://www.w3.org/2000/01/rdf-schema#comment> "The office where I work."@en .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office> <https://w3id.org/AffectedBy#hasQuality> <http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> .
+# 
+# http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeHumidity
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeHumidity> <http://www.w3.org/2000/01/rdf-schema#comment> "The relative humidity within the office."@en .
+# 
+# http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeOccupancy
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeOccupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeOccupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeOccupancy> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of people within the office."@en .
+# 
+# http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <https://w3id.org/affectedBy#affectedBy> <http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeHumidity> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <https://w3id.org/affectedBy#affectedBy> <http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeOccupancy> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <https://w3id.org/affectedBy#affectedBy> <http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <https://w3id.org/affectedBy#belongsTo> <http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "The temperature within the office."@en .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <https://w3id.org/AffectedBy#affectedBy> <http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeHumidity> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <https://w3id.org/AffectedBy#affectedBy> <http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeOccupancy> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <https://w3id.org/AffectedBy#affectedBy> <http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#outdoorHumidity> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#officeTemperature> <https://w3id.org/AffectedBy#belongsTo> <http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#office> .
+# 
+# http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#outdoorHumidity
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#outdoorHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#outdoorHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<http://193.144.237.227:8890/DAV/home/dba/ODP/AffectedBy_Example.owl#outdoorHumidity> <http://www.w3.org/2000/01/rdf-schema#comment> "The relative humidity outside the office."@en .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
