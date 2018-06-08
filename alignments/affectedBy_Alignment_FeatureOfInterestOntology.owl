@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/def/affectedBy_FeatureOfInterestAlignment"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/def/affectedBy_FeatureOfInterestAlignment">
+    <Prefix name="" IRI="https://w3id.org/def/affectedBy_FeatureOfInterestAlignment#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://w3id.org/affectedBy</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It defines the proposed alignments between the affectedBy ODP and the FeatureOfInterest ontology.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AffectedBy ODP alignment with FeatureOfInterest Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://creativecommons.org/licenses/by/3.0/</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/seas/isPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/seas/FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/seas/Property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/seas/derivesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/seas/hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://w3id.org/seas/FeatureOfInterestOntology"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="https://w3id.org/affectedBy#FeatureOfInterest"/>
+        <Class IRI="https://w3id.org/seas/FeatureOfInterest"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://w3id.org/affectedBy#Quality"/>
+        <Class IRI="https://w3id.org/seas/Property"/>
+    </EquivalentClasses>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
+        <NamedIndividual IRI="https://w3id.org/seas/FeatureOfInterestOntology"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/seas/derivesFrom"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#affectedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/seas/hasProperty"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#hasQuality"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/seas/isPropertyOf"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#belongsTo"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/seas/FeatureOfInterest</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://w3id.org/seas/FeatureOfInterestOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/seas/Property</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://w3id.org/seas/FeatureOfInterestOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/seas/derivesFrom</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://w3id.org/seas/FeatureOfInterestOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/seas/hasProperty</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://w3id.org/seas/FeatureOfInterestOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/seas/isPropertyOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://w3id.org/seas/FeatureOfInterestOntology</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/def/affectedBy_SSNAlignment"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/def/affectedBy_SSNAlignment">
+    <Prefix name="" IRI="https://w3id.org/def/affectedBy_SSNAlignment#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://w3id.org/affectedBy</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <IRI>http://creativecommons.org/licenses/by/3.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AffectedBy ODP alignment with SSN ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It defines the proposed alignments between the affectedBy ODP and the SSN ontology.</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/ssn/isPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/ssn/"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/sosa/"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/ssn/Property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/ssn/hasProperty"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <Class IRI="https://w3id.org/affectedBy#FeatureOfInterest"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/ns/ssn/Property"/>
+        <Class IRI="https://w3id.org/affectedBy#Quality"/>
+    </EquivalentClasses>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/sosa/"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/ssn/"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#belongsTo"/>
+        <ObjectProperty IRI="http://www.w3.org/ns/ssn/isPropertyOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#hasQuality"/>
+        <ObjectProperty IRI="http://www.w3.org/ns/ssn/hasProperty"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.w3.org/ns/sosa/FeatureOfInterest</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/ns/sosa/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.w3.org/ns/ssn/Property</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/ns/ssn/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.w3.org/ns/ssn/hasProperty</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/ns/ssn/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.w3.org/ns/ssn/isPropertyOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.w3.org/ns/ssn/</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
