@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://w3id.org/affectedByExample" -> "http://creativecommons.org/licenses/by/3.0/" [ label = "ns:license" ];
+	"https://w3id.org/affectedByExample" -> "https://w3id.org/affectedBy" [ label = "owl:imports" ];
+	"base:officeTemperature" -> "base:office" [ label = "base:belongsTo" ];
+	"base:officeTemperature" -> "base:officeTemperature" [ label = "base:affectedBy" ];
+	"base:officeTemperature" -> "base:officeOccupancy" [ label = "base:affectedBy" ];
+	"base:officeTemperature" -> "base:officeHumidity" [ label = "base:affectedBy" ];
+	"base:office" -> "base:officeTemperature" [ label = "base:hasQuality" ];
+
+}
