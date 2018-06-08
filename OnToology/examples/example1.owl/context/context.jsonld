@@ -1,0 +1,40 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "https://w3id.org/affectedBy#belongsTo",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://w3id.org/affectedBy#FeatureOfInterest"
+    },
+    "Quality" : {
+      "@id" : "https://w3id.org/affectedBy#Quality"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "affectedBy" : {
+      "@id" : "https://w3id.org/affectedBy#affectedBy",
+      "@type" : "@id"
+    },
+    "hasQuality" : {
+      "@id" : "https://w3id.org/affectedBy#hasQuality",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    }
+  }
+}
