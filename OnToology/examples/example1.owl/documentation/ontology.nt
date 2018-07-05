@@ -1,10 +1,12 @@
 <https://w3id.org/affectedByExample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/affectedByExample> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/affectedBy> .
 <https://w3id.org/affectedByExample> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/3.0/> .
+<https://w3id.org/affectedByExample> <http://purl.org/dc/terms/created> "2018-05-20" .
 <https://w3id.org/affectedByExample> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nJes\u00FAs Berm\u00FAdez <mailto:jesus.bermudez@ehu.eus>" .
 <https://w3id.org/affectedByExample> <http://purl.org/dc/terms/description> "The AffectedBy ODP example."@en .
+<https://w3id.org/affectedByExample> <http://purl.org/dc/terms/modified> "2018-07-05" .
 <https://w3id.org/affectedByExample> <http://purl.org/dc/terms/title> "AffectedBy ODP Example"@en .
-<https://w3id.org/affectedByExample> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"@en .
+<https://w3id.org/affectedByExample> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"@en .
 # 
 # 
 # #################################################################
@@ -14,34 +16,80 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/affectedBy#office
-<https://w3id.org/affectedBy#office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/affectedBy#office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#FeatureOfInterest> .
-<https://w3id.org/affectedBy#office> <https://w3id.org/affectedBy#hasQuality> <https://w3id.org/affectedBy#officeTemperature> .
-<https://w3id.org/affectedBy#office> <http://www.w3.org/2000/01/rdf-schema#comment> "The office where I work."@en .
+# https://w3id.org/affectedByExample#lr03
+<https://w3id.org/affectedByExample#lr03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#FeatureOfInterest> .
+<https://w3id.org/affectedByExample#lr03> <https://w3id.org/affectedBy#hasQuality> <https://w3id.org/affectedByExample#lr03Area> .
+<https://w3id.org/affectedByExample#lr03> <https://w3id.org/affectedBy#hasQuality> <https://w3id.org/affectedByExample#lr03Comfort> .
+<https://w3id.org/affectedByExample#lr03> <https://w3id.org/affectedBy#hasQuality> <https://w3id.org/affectedByExample#lr03NumSeats> .
+<https://w3id.org/affectedByExample#lr03> <http://www.w3.org/2000/01/rdf-schema#comment> "Lecture Room 03"@en .
+<https://w3id.org/affectedByExample#lr03> <http://www.w3.org/2000/01/rdf-schema#label> "lr03" .
 # 
-# https://w3id.org/affectedBy#officeHumidity
-<https://w3id.org/affectedBy#officeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/affectedBy#officeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
-<https://w3id.org/affectedBy#officeHumidity> <http://www.w3.org/2000/01/rdf-schema#comment> "The relative humidity within the office."@en .
+# https://w3id.org/affectedByExample#lr03Area
+<https://w3id.org/affectedByExample#lr03Area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03Area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<https://w3id.org/affectedByExample#lr03Area> <http://www.w3.org/2000/01/rdf-schema#comment> "Area of the Lecture Room 03"@en .
+<https://w3id.org/affectedByExample#lr03Area> <http://www.w3.org/2000/01/rdf-schema#label> "lr03Area" .
 # 
-# https://w3id.org/affectedBy#officeOccupancy
-<https://w3id.org/affectedBy#officeOccupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/affectedBy#officeOccupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
-<https://w3id.org/affectedBy#officeOccupancy> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of people within the office."@en .
+# https://w3id.org/affectedByExample#lr03Comfort
+<https://w3id.org/affectedByExample#lr03Comfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03Comfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<https://w3id.org/affectedByExample#lr03Comfort> <https://w3id.org/affectedBy#affectedBy> <https://w3id.org/affectedByExample#lr03OutdoorNoise> .
+<https://w3id.org/affectedByExample#lr03Comfort> <https://w3id.org/affectedBy#affectedBy> <https://w3id.org/affectedByExample#lr03Temperature> .
+<https://w3id.org/affectedByExample#lr03Comfort> <http://www.w3.org/2000/01/rdf-schema#comment> "Comfort within the Lecture Room 03"@en .
+<https://w3id.org/affectedByExample#lr03Comfort> <http://www.w3.org/2000/01/rdf-schema#label> "lr03Comfort" .
 # 
-# https://w3id.org/affectedBy#officeTemperature
-<https://w3id.org/affectedBy#officeTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/affectedBy#officeTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
-<https://w3id.org/affectedBy#officeTemperature> <https://w3id.org/affectedBy#affectedBy> <https://w3id.org/affectedBy#officeHumidity> .
-<https://w3id.org/affectedBy#officeTemperature> <https://w3id.org/affectedBy#affectedBy> <https://w3id.org/affectedBy#officeOccupancy> .
-<https://w3id.org/affectedBy#officeTemperature> <https://w3id.org/affectedBy#affectedBy> <https://w3id.org/affectedBy#officeTemperature> .
-<https://w3id.org/affectedBy#officeTemperature> <https://w3id.org/affectedBy#belongsTo> <https://w3id.org/affectedBy#office> .
-<https://w3id.org/affectedBy#officeTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "The temperature within the office."@en .
+# https://w3id.org/affectedByExample#lr03Humidity
+<https://w3id.org/affectedByExample#lr03Humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03Humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<https://w3id.org/affectedByExample#lr03Humidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Humidity in the Lecture Room 03"@en .
+<https://w3id.org/affectedByExample#lr03Humidity> <http://www.w3.org/2000/01/rdf-schema#label> "lr03Humidity" .
 # 
-# https://w3id.org/affectedBy#outdoorHumidity
-<https://w3id.org/affectedBy#outdoorHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/affectedBy#outdoorHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
-<https://w3id.org/affectedBy#outdoorHumidity> <http://www.w3.org/2000/01/rdf-schema#comment> "The relative humidity outside the office."@en .
+# https://w3id.org/affectedByExample#lr03NumSeats
+<https://w3id.org/affectedByExample#lr03NumSeats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03NumSeats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<https://w3id.org/affectedByExample#lr03NumSeats> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of seats available in the Lecture Room 03"@en .
+<https://w3id.org/affectedByExample#lr03NumSeats> <http://www.w3.org/2000/01/rdf-schema#label> "lr03NumSeats" .
+# 
+# https://w3id.org/affectedByExample#lr03Occupancy
+<https://w3id.org/affectedByExample#lr03Occupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03Occupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<https://w3id.org/affectedByExample#lr03Occupancy> <http://www.w3.org/2000/01/rdf-schema#comment> "The occupancy of the Lecture Room 03"@en .
+<https://w3id.org/affectedByExample#lr03Occupancy> <http://www.w3.org/2000/01/rdf-schema#label> "lr03Occupancy" .
+# 
+# https://w3id.org/affectedByExample#lr03OutdoorNoise
+<https://w3id.org/affectedByExample#lr03OutdoorNoise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03OutdoorNoise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<https://w3id.org/affectedByExample#lr03OutdoorNoise> <https://w3id.org/affectedBy#affectedBy> <https://w3id.org/affectedByExample#lr03SoundInsulation> .
+<https://w3id.org/affectedByExample#lr03OutdoorNoise> <http://www.w3.org/2000/01/rdf-schema#comment> "The noise outdoor the Lecture Room 03"@en .
+<https://w3id.org/affectedByExample#lr03OutdoorNoise> <http://www.w3.org/2000/01/rdf-schema#label> "lr03OutdoorNoise" .
+# 
+# https://w3id.org/affectedByExample#lr03SolarRadiation
+<https://w3id.org/affectedByExample#lr03SolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03SolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<https://w3id.org/affectedByExample#lr03SolarRadiation> <https://w3id.org/affectedBy#affectedBy> <https://w3id.org/affectedByExample#lr03WindowAzimuth> .
+<https://w3id.org/affectedByExample#lr03SolarRadiation> <http://www.w3.org/2000/01/rdf-schema#comment> "The Solar radiation received in the Lecture Room 03 through its window"@en .
+<https://w3id.org/affectedByExample#lr03SolarRadiation> <http://www.w3.org/2000/01/rdf-schema#label> "lr03SolarRadiation" .
+# 
+# https://w3id.org/affectedByExample#lr03SoundInsulation
+<https://w3id.org/affectedByExample#lr03SoundInsulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03SoundInsulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<https://w3id.org/affectedByExample#lr03SoundInsulation> <http://www.w3.org/2000/01/rdf-schema#comment> "The sound insulation of the Lecture Room 03"@en .
+<https://w3id.org/affectedByExample#lr03SoundInsulation> <http://www.w3.org/2000/01/rdf-schema#label> "lr03SoundInsulation" .
+# 
+# https://w3id.org/affectedByExample#lr03Temperature
+<https://w3id.org/affectedByExample#lr03Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<https://w3id.org/affectedByExample#lr03Temperature> <https://w3id.org/affectedBy#affectedBy> <https://w3id.org/affectedByExample#lr03Humidity> .
+<https://w3id.org/affectedByExample#lr03Temperature> <https://w3id.org/affectedBy#affectedBy> <https://w3id.org/affectedByExample#lr03Occupancy> .
+<https://w3id.org/affectedByExample#lr03Temperature> <https://w3id.org/affectedBy#affectedBy> <https://w3id.org/affectedByExample#lr03SolarRadiation> .
+<https://w3id.org/affectedByExample#lr03Temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "The temperature of the Lecture Room 03"@en .
+<https://w3id.org/affectedByExample#lr03Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "lr03Temperature" .
+# 
+# https://w3id.org/affectedByExample#lr03WindowAzimuth
+<https://w3id.org/affectedByExample#lr03WindowAzimuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/affectedByExample#lr03WindowAzimuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/affectedBy#Quality> .
+<https://w3id.org/affectedByExample#lr03WindowAzimuth> <http://www.w3.org/2000/01/rdf-schema#comment> "The azimuth (direction) of the Lecture Room 03"@en .
+<https://w3id.org/affectedByExample#lr03WindowAzimuth> <http://www.w3.org/2000/01/rdf-schema#label> "lr03WindowAzimuth" .
 # 
 # Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
