@@ -19,7 +19,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
-        <IRI>http://creativecommons.org/licenses/by/3.0/</IRI>
+        <IRI>http://purl.org/NET/rdflicense/cc-by4.0</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>

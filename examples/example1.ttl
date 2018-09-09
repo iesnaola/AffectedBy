@@ -1,0 +1,141 @@
+@prefix : <https://w3id.org/affectedByExample#> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix ns1: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix affectedBy: <https://w3id.org/affectedBy#> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@base <https://w3id.org/affectedByExample> .
+
+<https://w3id.org/affectedByExample> rdf:type owl:Ontology ;
+                                      owl:imports <https://w3id.org/affectedBy> ;
+                                      terms:modified "2018-07-05" ;
+                                      terms:title "AffectedBy ODP Example"@en ;
+                                      owl:versionInfo "1.1"@en ;
+                                      terms:creator """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>""" ;
+                                      terms:description "The AffectedBy ODP example."@en ;
+                                      terms:created "2018-05-20" ;
+                                      ns:license <http://purl.org/NET/rdflicense/cc-by4.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/affectedBy#affectedBy
+affectedBy:affectedBy rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/affectedBy#hasQuality
+affectedBy:hasQuality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/affectedBy#FeatureOfInterest
+affectedBy:FeatureOfInterest rdf:type owl:Class .
+
+
+###  https://w3id.org/affectedBy#Quality
+affectedBy:Quality rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/affectedByExample#lr03
+:lr03 rdf:type owl:NamedIndividual ,
+               affectedBy:FeatureOfInterest ;
+      rdfs:comment "Lecture Room 03"@en ;
+      rdfs:label "lr03" ;
+      affectedBy:hasQuality :lr03Area ,
+                            :lr03Comfort ,
+                            :lr03NumSeats .
+
+
+###  https://w3id.org/affectedByExample#lr03Area
+:lr03Area rdf:type owl:NamedIndividual ,
+                   affectedBy:Quality ;
+          rdfs:comment "Area of the Lecture Room 03"@en ;
+          rdfs:label "lr03Area" .
+
+
+###  https://w3id.org/affectedByExample#lr03Comfort
+:lr03Comfort rdf:type owl:NamedIndividual ,
+                      affectedBy:Quality ;
+             rdfs:comment "Comfort within the Lecture Room 03"@en ;
+             rdfs:label "lr03Comfort" ;
+             affectedBy:affectedBy :lr03OutdoorNoise ,
+                                   :lr03Temperature .
+
+
+###  https://w3id.org/affectedByExample#lr03Humidity
+:lr03Humidity rdf:type owl:NamedIndividual ,
+                       affectedBy:Quality ;
+              rdfs:comment "Humidity in the Lecture Room 03"@en ;
+              rdfs:label "lr03Humidity" .
+
+
+###  https://w3id.org/affectedByExample#lr03NumSeats
+:lr03NumSeats rdf:type owl:NamedIndividual ,
+                       affectedBy:Quality ;
+              rdfs:comment "The number of seats available in the Lecture Room 03"@en ;
+              rdfs:label "lr03NumSeats" .
+
+
+###  https://w3id.org/affectedByExample#lr03Occupancy
+:lr03Occupancy rdf:type owl:NamedIndividual ,
+                        affectedBy:Quality ;
+               rdfs:comment "The occupancy of the Lecture Room 03"@en ;
+               rdfs:label "lr03Occupancy" .
+
+
+###  https://w3id.org/affectedByExample#lr03OutdoorNoise
+:lr03OutdoorNoise rdf:type owl:NamedIndividual ,
+                           affectedBy:Quality ;
+                  rdfs:comment "The noise outdoor the Lecture Room 03"@en ;
+                  rdfs:label "lr03OutdoorNoise" ;
+                  affectedBy:affectedBy :lr03SoundInsulation .
+
+
+###  https://w3id.org/affectedByExample#lr03SolarRadiation
+:lr03SolarRadiation rdf:type owl:NamedIndividual ,
+                             affectedBy:Quality ;
+                    rdfs:comment "The Solar radiation received in the Lecture Room 03 through its window"@en ;
+                    rdfs:label "lr03SolarRadiation" ;
+                    affectedBy:affectedBy :lr03WindowAzimuth .
+
+
+###  https://w3id.org/affectedByExample#lr03SoundInsulation
+:lr03SoundInsulation rdf:type owl:NamedIndividual ,
+                              affectedBy:Quality ;
+                     rdfs:comment "The sound insulation of the Lecture Room 03"@en ;
+                     rdfs:label "lr03SoundInsulation" .
+
+
+###  https://w3id.org/affectedByExample#lr03Temperature
+:lr03Temperature rdf:type owl:NamedIndividual ,
+                          affectedBy:Quality ;
+                 rdfs:comment "The temperature of the Lecture Room 03"@en ;
+                 rdfs:label "lr03Temperature" ;
+                 affectedBy:affectedBy :lr03Humidity ,
+                                       :lr03Occupancy ,
+                                       :lr03SolarRadiation .
+
+
+###  https://w3id.org/affectedByExample#lr03WindowAzimuth
+:lr03WindowAzimuth rdf:type owl:NamedIndividual ,
+                            affectedBy:Quality ;
+                   rdfs:comment "The azimuth (direction) of the Lecture Room 03"@en ;
+                   rdfs:label "lr03WindowAzimuth" .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
