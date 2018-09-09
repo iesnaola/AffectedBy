@@ -1,0 +1,82 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "https://w3id.org/affectedBy#belongsTo",
+      "@type" : "@id"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://w3id.org/affectedBy#FeatureOfInterest"
+    },
+    "reengineeredFrom" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#reengineeredFrom"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Quality" : {
+      "@id" : "https://w3id.org/affectedBy#Quality"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "affectedBy" : {
+      "@id" : "https://w3id.org/affectedBy#affectedBy",
+      "@type" : "@id"
+    },
+    "relatedCPs" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "hasQuality" : {
+      "@id" : "https://w3id.org/affectedBy#hasQuality",
+      "@type" : "@id"
+    },
+    "scenarios" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Vocabulary" : {
+      "@id" : "http://purl.org/vocommons/voaf#Vocabulary"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "coversRequirements" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements"
+    },
+    "hasConsequences" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences"
+    },
+    "hasIntent" : {
+      "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}
