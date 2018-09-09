@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/affectedByExample#"
+     xml:base="https://w3id.org/affectedByExample"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:affectedBy="https://w3id.org/affectedBy#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ns1="http://creativecommons.org/ns#">
+    <owl:Ontology rdf:about="https://w3id.org/affectedByExample">
+        <owl:imports rdf:resource="https://w3id.org/affectedBy"/>
+        <ns1:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-05-20</terms:created>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</terms:creator>
+        <terms:description xml:lang="en">The AffectedBy ODP example.</terms:description>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-07-05</terms:modified>
+        <terms:title xml:lang="en">AffectedBy ODP Example</terms:title>
+        <owl:versionInfo xml:lang="en">1.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/affectedBy#affectedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/affectedBy#affectedBy"/>
+    
+
+
+    <!-- https://w3id.org/affectedBy#hasQuality -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/affectedBy#hasQuality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/affectedBy#FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="https://w3id.org/affectedBy#FeatureOfInterest"/>
+    
+
+
+    <!-- https://w3id.org/affectedBy#Quality -->
+
+
+    <owl:Class rdf:about="https://w3id.org/affectedBy#Quality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#FeatureOfInterest"/>
+        <rdfs:comment xml:lang="en">Lecture Room 03</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03</rdfs:label>
+        <affectedBy:hasQuality rdf:resource="https://w3id.org/affectedByExample#lr03Area"/>
+        <affectedBy:hasQuality rdf:resource="https://w3id.org/affectedByExample#lr03Comfort"/>
+        <affectedBy:hasQuality rdf:resource="https://w3id.org/affectedByExample#lr03NumSeats"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03Area -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03Area">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">Area of the Lecture Room 03</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03Area</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03Comfort -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03Comfort">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">Comfort within the Lecture Room 03</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03Comfort</rdfs:label>
+        <affectedBy:affectedBy rdf:resource="https://w3id.org/affectedByExample#lr03OutdoorNoise"/>
+        <affectedBy:affectedBy rdf:resource="https://w3id.org/affectedByExample#lr03Temperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03Humidity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03Humidity">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">Humidity in the Lecture Room 03</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03Humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03NumSeats -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03NumSeats">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The number of seats available in the Lecture Room 03</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03NumSeats</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03Occupancy -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03Occupancy">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The occupancy of the Lecture Room 03</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03Occupancy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03OutdoorNoise -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03OutdoorNoise">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The noise outdoor the Lecture Room 03</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03OutdoorNoise</rdfs:label>
+        <affectedBy:affectedBy rdf:resource="https://w3id.org/affectedByExample#lr03SoundInsulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03SolarRadiation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03SolarRadiation">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The Solar radiation received in the Lecture Room 03 through its window</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03SolarRadiation</rdfs:label>
+        <affectedBy:affectedBy rdf:resource="https://w3id.org/affectedByExample#lr03WindowAzimuth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03SoundInsulation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03SoundInsulation">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The sound insulation of the Lecture Room 03</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03SoundInsulation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03Temperature -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03Temperature">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The temperature of the Lecture Room 03</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03Temperature</rdfs:label>
+        <affectedBy:affectedBy rdf:resource="https://w3id.org/affectedByExample#lr03Humidity"/>
+        <affectedBy:affectedBy rdf:resource="https://w3id.org/affectedByExample#lr03Occupancy"/>
+        <affectedBy:affectedBy rdf:resource="https://w3id.org/affectedByExample#lr03SolarRadiation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/affectedByExample#lr03WindowAzimuth -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/affectedByExample#lr03WindowAzimuth">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The azimuth (direction) of the Lecture Room 03</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lr03WindowAzimuth</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
