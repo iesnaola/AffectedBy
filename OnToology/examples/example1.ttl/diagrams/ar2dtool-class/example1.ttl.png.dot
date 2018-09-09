@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"base:lr03Comfort" -> "base:lr03Temperature" [ label = "affectedBy:affectedBy" ];
+	"base:lr03Comfort" -> "base:lr03OutdoorNoise" [ label = "affectedBy:affectedBy" ];
+	"https://w3id.org/affectedByExample" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = "ns:license" ];
+	"https://w3id.org/affectedByExample" -> "https://w3id.org/affectedBy" [ label = "owl:imports" ];
+	"base:lr03Temperature" -> "base:lr03SolarRadiation" [ label = "affectedBy:affectedBy" ];
+	"base:lr03Temperature" -> "base:lr03Occupancy" [ label = "affectedBy:affectedBy" ];
+	"base:lr03Temperature" -> "base:lr03Humidity" [ label = "affectedBy:affectedBy" ];
+	"base:lr03OutdoorNoise" -> "base:lr03SoundInsulation" [ label = "affectedBy:affectedBy" ];
+	"base:lr03" -> "base:lr03NumSeats" [ label = "affectedBy:hasQuality" ];
+	"base:lr03" -> "base:lr03Comfort" [ label = "affectedBy:hasQuality" ];
+	"base:lr03" -> "base:lr03Area" [ label = "affectedBy:hasQuality" ];
+	"base:lr03SolarRadiation" -> "base:lr03WindowAzimuth" [ label = "affectedBy:affectedBy" ];
+
+}
