@@ -31,8 +31,8 @@ Jesús Bermúdez <mailto:jesus.bermudez@ehu.eus>""" ;
 affectedBy:affectedBy rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/affectedBy#hasQuality
-affectedBy:hasQuality rdf:type owl:AnnotationProperty .
+###  https://w3id.org/affectedBy#influencedBy
+affectedBy:influencedBy rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -56,7 +56,7 @@ affectedBy:Quality rdf:type owl:Class .
                affectedBy:FeatureOfInterest ;
       rdfs:comment "Lecture Room 03"@en ;
       rdfs:label "lr03" ;
-      affectedBy:hasQuality :lr03Area ,
+      affectedBy:influencedBy :lr03Area ,
                             :lr03Comfort ,
                             :lr03NumSeats .
 
