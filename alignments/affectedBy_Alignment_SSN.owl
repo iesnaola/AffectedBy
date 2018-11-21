@@ -73,7 +73,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</Literal>
         <ObjectProperty IRI="http://www.w3.org/ns/ssn/isPropertyOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#hasQuality"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
         <ObjectProperty IRI="http://www.w3.org/ns/ssn/hasProperty"/>
     </SubObjectPropertyOf>
     <AnnotationAssertion>

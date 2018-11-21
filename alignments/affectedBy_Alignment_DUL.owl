@@ -80,7 +80,7 @@ Jesús Bermúdez &lt;mailto:jesus.bermudez@ehu.eus&gt;</Literal>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isQualityOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/affectedBy#hasQuality"/>
+        <ObjectProperty IRI="https://w3id.org/affectedBy#influencedBy"/>
         <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality"/>
     </SubObjectPropertyOf>
     <AnnotationAssertion>
