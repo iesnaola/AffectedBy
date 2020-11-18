@@ -1,7 +1,25 @@
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>The AffectedBy ODP consists of two classes <i>aff:FeatureOfInterest</i> and <i>aff:Quality</i>; and three properties <i>aff:influencedBy</i>, <i>aff:belongsTo</i>, and <i>aff:affectedBy</i>.</p>
 
-<p>This ODP is a reengineering of the <a href="https://ci.mines-stetienne.fr/seas/FeatureOfInterestOntology-1.0">SEAS Feature of Interest ontology </a>. The constraint on the property seas:derivesFrom to be symmetric is unnecessary and sometimes innapropriate. For instance, the temperature of a room may derive from the occupancy of the room; however, it is not necessary that the occupancy derives from the temperature of the room. A new property <i>aff:affectedBy</i> (released from the symmetric constraint) is defined in the AffectedBy ODP to replace the role of the property seas:derivesFrom. It can be asserted that seas:derivesFrom is sub property of <i>aff:affectedBy</i>. The class <i>aff:FeatureOfInterest</i> is equivalent to <i>seas:FeatureOfInterest</i>, and the class <i>seas:Property</i> is sub class of <i>aff:Quality</i>. Moreover, seas:hasProperty is sub property of <i>aff:influencedBy</i>, and <i>seas:isPropertyOf</i> is sub property of <i>aff:belongsTo</i>. Furthermore, <i>aff:belongsTo</i> is defined to be functional, to support the notion that a quality is intrinsic to the feature of interest (i.e., an entity) to which it belongs (according to the conceptualization in DUL); and it is asserted that every quality belongs to a feature of interest (<i>aff:Quality rdfs:subClassOf aff:belongsTo some aff:FeatureOfInterest</i>). </p>
+<p>The AffectedBy ODP defines the <i>aff:belongsTo</i> object property to define the relationship between qualities and features of interest. It is defined as functional to support the notion that a quality is intrinsic to the feature of interest to which it belongs, thus following the conceptualization in DUL. Additionally, the following axiom formalizes that every quality belongs to a feature of interest: <br>
+<i>aff:Quality &#8838; &#8707;aff:belongsTo.aff:FeatureOfInterest</i>
+
+</p>
+
+<p>Besides, the AffectedBy ODP introduces the <i>aff:affectedBy</i> object property to relate a quality that is affected by another quality and it is declared to be transitive.</p>
+
+<p>The <i>aff:influencedBy</i> object property is also introduced to relate features of interest and qualities. The next property chain axiom is included in its definition:<br>
+<i>aff:influencedBy &#9900; aff:affectedBy &#8838; aff:influencedBy</i>
+</p>
+
+<p>Finally, the property axiom representing that the <i>aff:belongsTo</i> object property is a subproperty of the inverse of the <i>aff:influencedBy</i> object property is introduced:<br>
+<i>aff:belongsTo &#8838; inverse(aff:influencedBy)</i>
+</p>
+
+<p>Axioms included in the AffectedBy ODP provide inferences that allow answering the formulated CQs properly. Note that only triples with predicates <i>aff:belongsTo</i> and <i>aff:affectedBy</i> need to be asserted, the remaining triples are inferred with the provided property axioms.</p>
+
+
+
 
 <p>Finally, the object chain axiom <i>aff:influencedBy o aff:affectedBy rdfs:subPropertyOf aff:influencedBy</i> is asserted.</p>
 <div id="namespacedeclarations">
