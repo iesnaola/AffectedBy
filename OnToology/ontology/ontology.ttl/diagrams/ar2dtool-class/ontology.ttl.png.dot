@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Quality" "base:FeatureOfInterest" ; /*classes style*/
+	"https://w3id.org/affectedBy" -> "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl" [ label = "owl:imports" ];
+	"https://w3id.org/affectedBy" -> "https://w3id.org/affectedBy/" [ label = ":preferredNamespaceUri" ];
+	"https://w3id.org/affectedBy" -> "https://w3id.org/seas/FeatureOfInterestOntology-1.0" [ label = "cpannotationschema:relatedCPs" ];
+	"https://w3id.org/affectedBy" -> "https://w3id.org/seas/FeatureOfInterestOntology-1.0" [ label = "cpannotationschema:reengineeredFrom" ];
+	"base:influencedBy" -> "a1e7a9d365e3b52666924f5544c5c63c" [ label = "owl:propertyChainAxiom" ];
+	"NULL" -> "e8a9af72c13c278f5a24e1e3232eb06e" [ label = "rdf:rest" ];
+	"NULL" -> "base:influencedBy" [ label = "rdf:first" ];
+	"NULL" -> "base:FeatureOfInterest" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:belongsTo" [ label = "owl:onProperty" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "base:affectedBy" [ label = "rdf:first" ];
+	"base:belongsTo" -> "de55e88a6637e77138c595e5c1205434" [ label = "rdfs:subPropertyOf" ];
+	"base:Quality" -> "base:FeatureOfInterest" [ label = "base:belongsTo" ];
+	"base:Quality" -> "base:Quality" [ label = "base:affectedBy" ];
+	"base:FeatureOfInterest" -> "base:Quality" [ label = "base:influencedBy" ];
+
+}
